@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ClassPlannerActivity!</string>
+    <string name="app_name">Class Planner</string>
+    <color name="bgColor">#FF6EC7</color>
+    <color name="textColor">#990099</color>
+</resources>
