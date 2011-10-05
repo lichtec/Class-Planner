@@ -11,11 +11,11 @@
         <TabWidget
             android:id="@android:id/tabs"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" android:background="@color/bgColor"/>
+            android:layout_height="wrap_content" android:background="@color/pacific_green"/>
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:padding="5dp" android:background="@color/bgColor"/>
+            android:padding="5dp" android:background="@color/pacific_green"/>
     </LinearLayout>
 </TabHost>

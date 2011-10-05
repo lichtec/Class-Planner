@@ -2,6 +2,12 @@
 <resources>
     <string name="hello">Hello World, ClassPlannerActivity!</string>
     <string name="app_name">Class Planner</string>
-    <color name="bgColor">#FF6EC7</color>
-    <color name="textColor">#990099</color>
+    <color name="pacific_green">#36DBCA</color>
+    <color name="indigo_2">#218868</color>
+    <color name="turquoise_blue">#00C78C</color>
+    <color name="cold_grey">#808A87</color>
+    <color name="green_visor">#4D7865</color>
+    <color name="cooler">#284942</color>
+    <color name="violet_flower">#BF5FFF</color>
+    <color name="concord_grape">#660198</color>
 </resources>
