@@ -9,8 +9,8 @@ public class SemesterActivity extends Activity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.tablayout);
-		//TextView tempText = new TextView(this);
-		//tempText.setText("Please add functionality to me :D");
-		//setContentView(tempText);
+		TextView tempText = new TextView(this);
+		tempText.setText("Please add functionality to me :D");
+		setContentView(tempText);
 	}
 }
