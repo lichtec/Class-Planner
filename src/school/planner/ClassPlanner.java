@@ -12,7 +12,7 @@ public class ClassPlanner extends TabActivity
 	public void onCreate(Bundle savedInstanceState) //This method creates a premade tab.
 	{
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.main);
+	    setContentView(R.layout.tablayout);
 	    //Resources res = getResources(); // Resource object to get Drawables //if we want icons for the tabs.
 	    TabHost tabHost = getTabHost();  // The activity TabHost
 	    TabHost.TabSpec spec;  // Resusable TabSpec for each tab
