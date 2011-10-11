@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@color/pacific_green" 
+  android:orientation="vertical" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" 
+  layout_marginLeft="10dip"
+  layout_marginRight="10dip" android:scrollbarStyle="outsideInset">
+    <Button 
+    		android:layout_width="match_parent"
+    		android:layout_marginRight="40dip"
+    		android:id="@+id/class01"
+    		android:background="@drawable/custom_button"
+    		android:text="Class One"
+    		android:layout_marginLeft="40dip"
+    		android:layout_marginTop="10dip"
+    		android:layout_height="65dp">
+    </Button>
+    
+    <Button 
+    	android:layout_width="match_parent"
+    	android:layout_marginRight="40dip"
+    	android:id="@+id/class02"
+    	android:background="@drawable/custom_button"
+    	android:text="Class Two" android:layout_marginLeft="40dip"
+    	android:layout_marginTop="10dip"
+    	android:layout_height="65dp">
+    </Button>
+    
+    <Button 
+    	android:layout_width="match_parent"
+    	android:layout_marginRight="40dip"
+    	android:id="@+id/class03"
+    	android:background="@drawable/custom_button"
+    	android:text="Class Three"
+    	android:layout_marginLeft="40dip"
+    	android:layout_marginTop="10dip"
+    	android:layout_height="65dp">
+    </Button>
+    
+    <Button 
+    	android:layout_width="match_parent"
+    	android:layout_marginRight="40dip"
+    	android:id="@+id/class04"
+    	android:background="@drawable/custom_button"
+    	android:text="Class Four"
+    	android:layout_marginLeft="40dip"
+    	android:layout_marginTop="10dip"
+    	android:layout_height="65dp">
+    </Button>
+    
+    <FrameLayout 
+    	android:id="@+id/frameLayout1"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_marginTop="10dip">
+        <LinearLayout 
+        	android:id="@+id/linearLayout1"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:weightSum="1">
+        	
+            <Button 
+            	android:layout_weight="0.24"
+            	android:layout_width="wrap_content"
+            	android:text="Button"
+            	android:layout_height="wrap_content"
+            	android:id="@+id/addClass"
+            	android:layout_marginLeft="40dip">
+            </Button>
+            <Button
+            android:layout_weight="0.24"
+            android:layout_width="wrap_content"
+            android:id="@+id/newSemester"
+            android:text="Button"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dip">
+            </Button>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
