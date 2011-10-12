@@ -34,7 +34,6 @@ public class ClassInformation extends ExpandableListActivity
 			}
 		};
 		
-    /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -43,39 +42,43 @@ public class ClassInformation extends ExpandableListActivity
 		SimpleExpandableListAdapter expListAdapter = new SimpleExpandableListAdapter(
 				this,
 				createGroupList(),
-				R.layout.group_row,
-				new String[] { "headerName" },
+				R.layout.group_row, //Stylesheet for the text in this row
+				new String[] { "headerName" }, //I actually have no idea why these needs brackets. using "=" didn't seem to work.
 				new int[] { R.id.groupname },
 				createChildList(),
 				R.layout.child_row,
 				new String[] { "subheaderName", "subheader2Name" },
-				new int[] { R.id.childname, R.id.child2name }
+				new int[] { R.id.childname, R.id.child2name } //references to the "child_row" stylesheet
 			);
 		setListAdapter( expListAdapter );
     }
-
+// This creates the headers: Class info, Professor info, etc.
 	private List createGroupList() {
 	  ArrayList result = new ArrayList();
-	  for( int i = 0 ; i < headers.length ; ++i ) {
+	  for( int i = 0; i < headers.length ; i++ ) 
+	  {
 		HashMap m = new HashMap();
 	    m.put( "headerName",headers[i] );
 		result.add( m );
 	  }
 	  return (List)result;
     }
-
+// And this creates the subcategories: Professor name, room number, etc.
   private List createChildList() {
 	ArrayList result = new ArrayList();
-	for( int i = 0 ; i < subHeaders.length ; ++i ) {
-// Second-level lists
+	for( int i = 0 ; i < subHeaders.length ; i++ ) 
+	{
 	  ArrayList secList = new ArrayList();
-	  for( int n = 0 ; n < subHeaders[i].length ; n += 2 ) {
+//Along with the subcategories, this fills in the prewritten information (see the Strings above).
+//Not sure how we want to code it to alternate between subcategory titles and user-input information?
+	  for( int n = 0 ; n < subHeaders[i].length ; n += 2 )
+	  {
 	    HashMap child = new HashMap();
 		child.put( "subheaderName", subHeaders[i][n] );
-	    child.put( "subheader2Name", subHeaders[i][n+1] );
-		secList.add( child );
+	    child.put( "subheader2Name", subHeaders[i][n+1]);
+		secList.add(child);
 	  }
-	  result.add( secList );
+	  result.add(secList);
 	}
 	return result;
   }

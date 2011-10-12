@@ -4,10 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-<<<<<<< HEAD
 import android.content.Intent;
-=======
->>>>>>> origin/master
 
 public class SemesterActivity extends Activity
 {
@@ -27,25 +24,18 @@ public class SemesterActivity extends Activity
 		class_button1.setOnClickListener(new View.OnClickListener()
 		{
 			
-<<<<<<< HEAD
 			public void onClick(View v)
 			{
 				//setContentView(R.layout.main);
 				Intent i = new Intent(SemesterActivity.this, ClassInformation.class);
 				startActivity(i);
-=======
-			public void onClick(View v) 
-			{
-				setContentView(R.layout.main);
->>>>>>> origin/master
-				
 			}
-		});
 		Button class_button2 = (Button)findViewById(R.id.class02);
 		Button class_button3 = (Button)findViewById(R.id.class03);
 		Button class_button4 = (Button)findViewById(R.id.class04);
 		Button addClass_button = (Button)findViewById(R.id.addClass);
 		Button newSemester_button = (Button)findViewById(R.id.newSemester);
 		//custom_button.setOnClickListener(new View.OnClickListener()
+		});
 	}
 }

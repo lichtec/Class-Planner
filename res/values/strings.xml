@@ -10,8 +10,5 @@
     <color name="cooler">#284942</color>
     <color name="violet_flower">#BF5FFF</color>
     <color name="concord_grape">#660198</color>
-<<<<<<< HEAD
     	<string name="main_no_items">No items</string>
-=======
->>>>>>> origin/master
 </resources>

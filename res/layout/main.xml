@@ -16,9 +16,6 @@
             android:id="@android:id/tabcontent"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-<<<<<<< HEAD
-            android:padding="5dp" android:background="@color/pacific_green"/>
-=======
             android:padding="5dp" android:background="@color/pacific_green">
             <LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout1" android:layout_height="match_parent" android:orientation="vertical">
         		<EditText android:inputType="textPersonName" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/editText1"></EditText>
@@ -27,6 +24,5 @@
         		</EditText>
         	</LinearLayout>
         </FrameLayout>
->>>>>>> origin/master
     </LinearLayout>
 </TabHost>

@@ -2,6 +2,7 @@
 <TextView android:id="@+id/groupname"
 		 xmlns:android="http://schemas.android.com/apk/res/android"
          android:textSize="16px"
+	     android:textColor="@color/cooler"
          android:textStyle="bold"
 		 android:paddingLeft="50px"
          android:layout_width="fill_parent"
