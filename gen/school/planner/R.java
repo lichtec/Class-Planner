@@ -25,13 +25,18 @@ public final class R {
         public static final int icon=0x7f020001;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int addClass=0x7f060009;
         public static final int child2name=0x7f060001;
         public static final int childname=0x7f060000;
+=======
+        public static final int addClass=0x7f060008;
+>>>>>>> origin/master
         public static final int class01=0x7f060003;
         public static final int class02=0x7f060004;
         public static final int class03=0x7f060005;
         public static final int class04=0x7f060006;
+<<<<<<< HEAD
         public static final int frameLayout1=0x7f060007;
         public static final int groupname=0x7f060002;
         public static final int linearLayout1=0x7f060008;
@@ -43,10 +48,24 @@ public final class R {
         public static final int listlayout=0x7f030002;
         public static final int main=0x7f030003;
         public static final int tablayout=0x7f030004;
+=======
+        public static final int editText1=0x7f060001;
+        public static final int editText2=0x7f060002;
+        public static final int frameLayout1=0x7f060007;
+        public static final int linearLayout1=0x7f060000;
+        public static final int newSemester=0x7f060009;
+    }
+    public static final class layout {
+        public static final int main=0x7f030000;
+        public static final int tablayout=0x7f030001;
+>>>>>>> origin/master
     }
     public static final class string {
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
+<<<<<<< HEAD
         public static final int main_no_items=0x7f040002;
+=======
+>>>>>>> origin/master
     }
 }
