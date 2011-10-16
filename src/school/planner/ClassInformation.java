@@ -53,7 +53,8 @@ public class ClassInformation extends ExpandableListActivity
 		setListAdapter( expListAdapter );
     }
 // This creates the headers: Class info, Professor info, etc.
-	private List createGroupList() {
+	private List createGroupList() 
+	{
 	  ArrayList result = new ArrayList();
 	  for( int i = 0; i < headers.length ; i++ ) 
 	  {
