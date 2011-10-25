@@ -8,6 +8,7 @@ import android.content.Intent;
 
 public class SemesterActivity extends Activity
 {
+	//testing the gitHub test
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
