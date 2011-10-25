@@ -8,15 +8,12 @@ import android.content.Intent;
 
 public class SemesterActivity extends Activity
 {
-	//testing the gitHub test
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.tablayout);
 		setButtonClickListener();
-		//TextView tempText = new TextView(this);
-		//tempText.setText("Please add functionality to me :D");
-		//setContentView(tempText);
+
 	}
 	
 	private void setButtonClickListener()
@@ -27,7 +24,6 @@ public class SemesterActivity extends Activity
 			
 			public void onClick(View v)
 			{
-				//setContentView(R.layout.main);
 				Intent i = new Intent(SemesterActivity.this, ClassInformation.class);
 				startActivity(i);
 			}
