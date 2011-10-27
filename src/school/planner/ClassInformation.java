@@ -4,7 +4,6 @@ import android.app.ExpandableListActivity;
 import android.os.Bundle;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.HashMap;
 import android.widget.SimpleExpandableListAdapter;
 

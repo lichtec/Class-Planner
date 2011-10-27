@@ -3,5 +3,6 @@
 	android:layout_width="fill_parent" android:layout_height="fill_parent" >
 	<TextView android:text="@+id/TextView1" android:layout_width="match_parent"
 		android:layout_height="wrap_content" android:id="@+id/label"
-		android:textSize="30px" android:background="@drawable/custom_button"></TextView>
+		android:textSize="30px" android:background="@drawable/custom_button"
+		android:textColor="@android:color/white" />"
 </LinearLayout>
