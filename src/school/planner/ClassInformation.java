@@ -38,7 +38,7 @@ public class ClassInformation extends ExpandableListActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listlayout);
+        setContentView(R.layout.expandlistlayout);
 		SimpleExpandableListAdapter expListAdapter = new SimpleExpandableListAdapter(
 				this,
 				createGroupList(),

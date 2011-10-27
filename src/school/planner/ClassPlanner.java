@@ -24,7 +24,8 @@ public class ClassPlanner extends TabActivity
 	    // Initialize a TabSpec for each tab and add it to the TabHost
 	    spec = tabHost.newTabSpec("Fall '11").setIndicator("Fall '11").setContent(semIntent);
 	    tabHost.addTab(spec);
-	    
+	    spec = tabHost.newTabSpec("Spring '12").setIndicator("Spring '12").setContent(semIntent);
+	    tabHost.addTab(spec);
 	    tabHost.setCurrentTab(2); //Probably useful later.
 	}
 }

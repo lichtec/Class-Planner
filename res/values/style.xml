@@ -1,0 +1,6 @@
+<resources>
+        <style name="PolkaDotTheme" parent="android:Theme">
+        <item name="android:windowBackground">@drawable/backrepeat</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>
