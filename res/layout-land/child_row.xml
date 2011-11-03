@@ -6,7 +6,7 @@
 
     <TextView android:id="@+id/childname"
 		 android:paddingLeft="50px"
-         android:textSize="20px"
+         android:textSize="25px"
 	     android:textColor="@android:color/black"
 	     android:textStyle="italic"
          android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
          android:background="@drawable/transback"/>
 
     <TextView android:id="@+id/child2name"
-         android:textSize="20px"
+         android:textSize="25px"
 	     android:textColor="@color/cooler"
 	     android:background="@drawable/transback"
          android:textStyle="italic"

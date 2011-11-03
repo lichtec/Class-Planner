@@ -11,8 +11,6 @@
             <stroke
                 android:width="3dp"
                 android:color="@color/cold_grey" />
-            <corners
-                android:radius="3dp" />
             <padding
                 android:left="10dp"
                 android:top="10dp"
@@ -30,8 +28,6 @@
             <stroke
                 android:width="3dp"
                 android:color="@color/cold_grey" />
-            <corners
-                android:radius="3dp" />
             <padding
                 android:left="10dp"
                 android:top="10dp"
@@ -43,14 +39,9 @@
     <item>        
         <shape>
             <gradient
-                android:startColor="@color/turquoise_blue"
-                android:endColor="@color/indigo_2"
+                android:startColor="@android:color/transparent"
+                android:endColor="@color/cold_grey"
                 android:angle="270" />
-            <stroke
-                android:width="3dp"
-                android:color="@color/cold_grey" />
-            <corners
-                android:radius="3dp" />
             <padding
                 android:left="10dp"
                 android:top="10dp"

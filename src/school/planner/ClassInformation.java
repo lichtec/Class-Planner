@@ -4,7 +4,6 @@ import android.app.ExpandableListActivity;
 import android.os.Bundle;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Map;
 import java.util.HashMap;
 import android.widget.SimpleExpandableListAdapter;
 
@@ -38,7 +37,7 @@ public class ClassInformation extends ExpandableListActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listlayout);
+        setContentView(R.layout.expandlistlayout);
 		SimpleExpandableListAdapter expListAdapter = new SimpleExpandableListAdapter(
 				this,
 				createGroupList(),
