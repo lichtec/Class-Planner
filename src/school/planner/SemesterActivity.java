@@ -17,7 +17,6 @@ public class SemesterActivity extends ListActivity
     public void onCreate(Bundle savedInstanceState)
 	{
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.semactivitylayout);
         setListAdapter(new ArrayAdapter<String>(this,
         R.layout.listlayout, R.id.label, NAMES));
         getListView().setTextFilterEnabled(true);
