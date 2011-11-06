@@ -3,6 +3,10 @@
         <item name="android:windowBackground">@drawable/backrepeat</item>
         <item name="android:windowNoTitle">true</item>
     </style>
+    <style name="BlackPolkaDotTheme" parent="android:Theme">
+        <item name="android:windowBackground">@drawable/backrepeatbl</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
     <style name="PlainBlackTheme" parent="android:Theme">
         <item name="android:windowBackground">@android:color/black</item>
         <item name="android:windowNoTitle">true</item>

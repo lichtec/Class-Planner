@@ -41,8 +41,10 @@ public class ClassPlanner extends TabActivity
 	    switch (item.getItemId())  //each option must have a layout defined in menu.xml. Simply add a new "case" below 
 	    							//for functionality for a new option. "toast" below is a flashing message for demonstration.
 	    {
-	        case R.id.icontext: Toast.makeText(this, "You pressed the settings button!", Toast.LENGTH_LONG).show();
-	                            break;
+	        case R.id.icontext:  
+
+	        	//Toast.makeText(this, "You pressed the settings button!", Toast.LENGTH_LONG).show();
+	                            //break;
 	    }
 	    return true;
 	}

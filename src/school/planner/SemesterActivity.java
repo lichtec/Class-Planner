@@ -4,7 +4,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.LinearLayout;
 import android.content.Intent;
+import android.graphics.*;
+import android.graphics.drawable.BitmapDrawable;
 
 public class SemesterActivity extends ListActivity
 {  
@@ -19,8 +22,7 @@ public class SemesterActivity extends ListActivity
         super.onCreate(savedInstanceState);
         setListAdapter(new ArrayAdapter<String>(this,
         R.layout.listlayout, R.id.label, NAMES));
-        getListView().setTextFilterEnabled(true);
-        
+        getListView().setTextFilterEnabled(true);     
     }
     
     protected void onListItemClick(ListView l, View v, int position, long id) 

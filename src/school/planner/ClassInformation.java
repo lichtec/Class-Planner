@@ -29,7 +29,7 @@ public class ClassInformation extends ExpandableListActivity
 				"E-mail:", "Cecil.Schmidt@washburn.edu"
 			},
 			{
-				"New Assignment", "This is a new Assignment"
+				"New Assignment", "This is a new Assignment, TEST"
 			}
 		};
 		
