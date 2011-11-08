@@ -2,4 +2,7 @@
     <item android:id="@+id/icontext"
         android:title="Settings"
         android:icon="@android:drawable/ic_menu_manage" />
+    <item android:id="@+id/icontext2"
+        android:title="Add New Class"
+        android:icon="@android:drawable/ic_menu_manage" />
 </menu>

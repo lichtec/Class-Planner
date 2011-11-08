@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import android.content.Intent;
 import android.graphics.*;
 import android.graphics.drawable.BitmapDrawable;
@@ -20,8 +21,7 @@ public class SemesterActivity extends ListActivity
     public void onCreate(Bundle savedInstanceState)
 	{
         super.onCreate(savedInstanceState);
-        setListAdapter(new ArrayAdapter<String>(this,
-        R.layout.listlayout, R.id.label, NAMES));
+        setListAdapter(new ArrayAdapter<String>(this, R.layout.listlayout, R.id.label, NAMES));
         getListView().setTextFilterEnabled(true);     
     }
     
@@ -30,9 +30,11 @@ public class SemesterActivity extends ListActivity
     	super.onListItemClick(l, v, position, id);
     	if(position==0)
     	{
-    	Intent i = new Intent(SemesterActivity.this, ClassInformation.class);
-    	startActivity(i);
+    		Object o = this.getListAdapter().getItem(position);
+    		String keyword = o.toString();
+    		Toast.makeText(this, "You selected: " + keyword, Toast.LENGTH_LONG);
+    		Intent i = new Intent(SemesterActivity.this, ClassInformation.class);
+    		startActivity(i);
     	}
-    	else if (position==1);
     }
 }
