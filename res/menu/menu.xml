@@ -1,5 +1,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/icontext"
-        android:title="Add Assignment"
+        android:title="Settings"
+        android:icon="@android:drawable/ic_menu_manage" />
+    <item android:id="@+id/icontext2"
+        android:title="Add New Class"
         android:icon="@android:drawable/ic_menu_manage" />
 </menu>
