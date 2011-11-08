@@ -18,29 +18,97 @@
                 android:layout_height="wrap_content"
                 android:text="General Information"
                 android:editable="FALSE" >
-
-                <requestFocus />
-            </EditText>
-            
+            </EditText>            
         </TableRow>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Course Number" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Room Number" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Time" />
 
         <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
+           	
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Professor Information"
+                android:editable="FALSE" >
+            </EditText>
+            
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="TRUE"
+                android:text="Name" >
+
+                <requestFocus />
+            </EditText>
+
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="TRUE"
+                android:text="Office" />
+
         </TableRow>
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Office Hours" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Phone Number" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Email Address" />
+
     </TableLayout>
 	
 </LinearLayout>

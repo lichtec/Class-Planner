@@ -30,10 +30,15 @@ public class SemesterActivity extends ListActivity
     	super.onListItemClick(l, v, position, id);
     	if(position==0)
     	{
-    		Object o = this.getListAdapter().getItem(position);
-    		String keyword = o.toString();
-    		Toast.makeText(this, "You selected: " + keyword, Toast.LENGTH_LONG);
+    		//Object o = this.getListAdapter().getItem(position);
+    		//String keyword = o.toString();
+    		//Toast.makeText(this, "You selected: " + keyword, Toast.LENGTH_LONG);
     		Intent i = new Intent(SemesterActivity.this, ClassInformation.class);
+    		startActivity(i);
+    	}
+    	else if(position==1)
+    	{
+    		Intent i = new Intent(SemesterActivity.this, newCourseActivity.class);
     		startActivity(i);
     	}
     }

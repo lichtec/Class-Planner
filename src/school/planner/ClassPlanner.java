@@ -42,7 +42,8 @@ public class ClassPlanner extends TabActivity
 	    							//for functionality for a new option. "toast" below is a flashing message for demonstration.
 	    {
 	        case R.id.icontext2:
-	        setContentView(R.layout.newcourselayout);	
+	        Intent i = new Intent(ClassPlanner.this, newCourseActivity.class);
+	    	startActivity(i);;	
 	    }
 	    return true;
 	}
