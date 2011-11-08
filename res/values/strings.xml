@@ -10,5 +10,6 @@
     <color name="cooler">#284942</color>
     <color name="violet_flower">#BF5FFF</color>
     <color name="concord_grape">#660198</color>
+    <color name="indigo">#39CDD3</color>
     	<string name="main_no_items">No items</string>
 </resources>
