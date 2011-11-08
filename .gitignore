@@ -1,6 +1,7 @@
 .classpath
 .DS_Store
-.metadata
-.settings
-bin
-/.gitignore
+.metadata/
+.settings/
+/*/**/bin/**/*
+.gitignore
+/bin
