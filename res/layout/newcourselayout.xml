@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent" >
-
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/backrepeat" >
+
     <TableLayout
         android:id="@+id/tableLayout1"
         android:layout_width="match_parent"
@@ -52,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Professor Information"
-                android:editable="FALSE" >
+                android:editable="TRUE" >
             </EditText>
             
         </TableRow>
@@ -68,8 +69,6 @@
                 android:layout_height="wrap_content"
                 android:editable="TRUE"
                 android:text="Name" >
-
-                <requestFocus />
             </EditText>
 
         </TableRow>
