@@ -43,6 +43,7 @@
         		android:textAppearance="?android:attr/textAppearanceMedium"
         		android:textColor="@android:color/black"
         		android:padding="10px" />
+
             <EditText
                 android:id="@+id/editText6"
                 android:layout_width="fill_parent"
@@ -93,5 +94,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cancel" />
-        </LinearLayout>
+		</LinearLayout>
 </LinearLayout>

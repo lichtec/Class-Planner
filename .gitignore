@@ -8,7 +8,11 @@
 .settings/
 /*/**/bin/**/*
 .gitignore
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
 /bin
 /gen
 /Documentation
+=======
+/bin
+>>>>>>> refs/remotes/origin/master
