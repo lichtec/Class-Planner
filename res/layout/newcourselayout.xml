@@ -1,113 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:orientation="vertical"
 	android:background="@drawable/backrepeat" >
 
-    <TableLayout
-        android:id="@+id/tableLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <EditText
-                android:id="@+id/editText1"
+            <TextView
+                android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="General Information"
-                android:editable="FALSE" >
-            </EditText>            
-        </TableRow>
+        		android:textAppearance="?android:attr/textAppearanceMedium"
+        		android:textColor="@android:color/black"
+        		android:padding="10px" />         
 
         <EditText
             android:id="@+id/editText2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Course Number" />
 
         <EditText
             android:id="@+id/editText3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Room Number" />
 
         <EditText
             android:id="@+id/editText4"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Time" />
 
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-           	
-            <EditText
-                android:id="@+id/editText5"
+			<TextView
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Professor Information"
-                android:editable="TRUE" >
-            </EditText>
-            
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
+        		android:textAppearance="?android:attr/textAppearanceMedium"
+        		android:textColor="@android:color/black"
+        		android:padding="10px" />
             <EditText
                 android:id="@+id/editText6"
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:editable="TRUE"
                 android:text="Name" >
             </EditText>
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <EditText
-                android:id="@+id/editText7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:editable="TRUE"
-                android:text="Office" />
-
-        </TableRow>
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Office Location" />
 
         <EditText
             android:id="@+id/editText8"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Office Hours" />
 
         <EditText
             android:id="@+id/editText9"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Phone Number" />
 
         <EditText
             android:id="@+id/editText10"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Email Address" />
 
-    </TableLayout>
-	
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+        </LinearLayout>
 </LinearLayout>
