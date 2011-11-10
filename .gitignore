@@ -19,3 +19,9 @@ bin/Class-Planner.apk
 .gitignore
 
 bin/resources.ap_
+
+bin/Class-Planner.apk
+
+bin/classes.dex
+
+bin/resources.ap_
