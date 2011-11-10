@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 /.metadata
 /.settings
+=======
+.classpath
+.DS_Store
+.metadata/
+.settings/
+/*/**/bin/**/*
+.gitignore
+>>>>>>> refs/remotes/origin/master
 /bin
+/gen
+/Documentation
