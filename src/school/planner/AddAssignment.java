@@ -32,7 +32,6 @@ public class AddAssignment extends Activity
 		duedateText = (TextView) findViewById(R.id.textView3);
 		date = (DatePicker) findViewById(R.id.datePicker1);
 		assignDue = (EditText) findViewById(R.id.editText3);
-		completedText = (TextView) findViewById(R.id.textView4);
 		completedBox = (CheckBox) findViewById(R.id.checkBox1);
 	}
 }
