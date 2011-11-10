@@ -25,3 +25,5 @@ bin/Class-Planner.apk
 bin/classes.dex
 
 bin/resources.ap_
+
+gen/school/planner/R.java
