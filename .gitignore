@@ -1,18 +1,37 @@
-<<<<<<< HEAD
-/.metadata
-/.settings
-=======
 .classpath
 .DS_Store
 .metadata/
 .settings/
 /*/**/bin/**/*
 .gitignore
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/master
 /bin
-/gen
-/Documentation
-=======
-/bin
->>>>>>> refs/remotes/origin/master
+
+bin/resources.ap_
+
+bin/classes.dex
+
+bin/classes.dex
+
+bin/Class-Planner.apk
+
+.gitignore
+
+.gitignore
+
+bin/resources.ap_
+
+bin/Class-Planner.apk
+
+bin/classes.dex
+
+bin/resources.ap_
+
+gen/school/planner/R.java
+
+gen/school/planner/R.java
+
+bin/resources.ap_
+
+bin/classes.dex
+
+bin/Class-Planner.apk

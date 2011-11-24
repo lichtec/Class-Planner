@@ -1,98 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent" 
-	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:background="@drawable/backrepeat" >
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="General Information"
-        		android:textAppearance="?android:attr/textAppearanceMedium"
-        		android:textColor="@android:color/black"
-        		android:padding="10px" />         
+	<LinearLayout 
+    	android:orientation="vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
 
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:editable="TRUE"
-            android:text="Course Number" />
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="General Information" />    
 
         <EditText
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:editable="TRUE"
-            android:text="Room Number" />
-
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:editable="TRUE"
-            android:text="Time" />
-
-			<TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Professor Information"
-        		android:textAppearance="?android:attr/textAppearanceMedium"
-        		android:textColor="@android:color/black"
-        		android:padding="10px" />
-
-            <EditText
-                android:id="@+id/editText6"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:editable="TRUE"
-                android:text="Name" >
-            </EditText>
-        <EditText
-            android:id="@+id/editText7"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:editable="TRUE"
-            android:text="Office Location" />
-
-        <EditText
-            android:id="@+id/editText8"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:editable="TRUE"
-            android:text="Office Hours" />
-
-        <EditText
-            android:id="@+id/editText9"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:editable="TRUE"
-            android:text="Phone Number" />
-
-        <EditText
-            android:id="@+id/editText10"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:editable="TRUE"
-            android:text="Email Address" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-            <Button
-            android:id="@+id/button1"
+            android:id="@+id/courseNumberField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Done" />
+            android:editable="TRUE"
+            android:text="Course Number" >
+        </EditText>
 
+        <EditText
+            android:id="@+id/roomNumberField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Room Number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/timeField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Time" >
+        </EditText>
+
+        <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Professor Infromation" /> 
+
+        <EditText
+            android:id="@+id/nameField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Name" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/officeField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Office" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/officeHoursField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Office Hours" >
+		</EditText>
+		
+        <EditText
+            android:id="@+id/phoneNumberField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Phone Number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/emailAddressField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:editable="TRUE"
+            android:text="Email Address" >
+		</EditText>
+        
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/saveCourseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancel" />
-		</LinearLayout>
-</LinearLayout>
+            android:text="Save" >
+        </Button>
+	
+	</LinearLayout>
+</ScrollView>
