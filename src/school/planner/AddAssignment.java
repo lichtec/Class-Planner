@@ -20,18 +20,17 @@ public class AddAssignment extends Activity
 	TextView completedText;
 	CheckBox completedBox;
 	DatePicker date;
-	public void onCreate(Bundle savedInstanceState)
-	{
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.assignmentadd);
-		classList = (Spinner) findViewById(R.id.spinner1);
-		nameText = (TextView) findViewById(R.id.textView1);
-		assignName = (EditText) findViewById(R.id.editText1);
-		descriptionText = (TextView) findViewById(R.id.textView2);
-		assignDes = (EditText) findViewById(R.id.editText2);
-		duedateText = (TextView) findViewById(R.id.textView3);
-		date = (DatePicker) findViewById(R.id.datePicker1);
-		assignDue = (EditText) findViewById(R.id.editText3);
-		completedBox = (CheckBox) findViewById(R.id.checkBox1);
+public void onCreate(Bundle savedInstanceState)
+{
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.assignmentadd);
+	classList = (Spinner) findViewById(R.id.spinner1);
+	nameText = (TextView) findViewById(R.id.textView1);
+	assignName = (EditText) findViewById(R.id.editText1);
+	descriptionText = (TextView) findViewById(R.id.textView2);
+	assignDes = (EditText) findViewById(R.id.editText2);
+	duedateText = (TextView) findViewById(R.id.textView3);
+	date = (DatePicker) findViewById(R.id.datePicker1);
+	completedBox = (CheckBox) findViewById(R.id.checkBox1);
 	}
 }

@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/backrepeat">
 
-	<LinearLayout 
-    	android:orientation="vertical"
-		android:layout_width="fill_parent" 
-		android:layout_height="fill_parent">
+<LinearLayout
+     android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
 
-		<TextView
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:text="General Information" />    
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="General Information"
+/>
+
+<EditText
+    android:id="@+id/courseNameField"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:editable = "true"
+    android:text ="Course Title"/>
 
         <EditText
             android:id="@+id/courseNumberField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Course Number" >
@@ -24,7 +33,7 @@
 
         <EditText
             android:id="@+id/roomNumberField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Room Number" >
@@ -32,20 +41,20 @@
 
         <EditText
             android:id="@+id/timeField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Time" >
         </EditText>
 
         <TextView
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    android:text="Professor Infromation" /> 
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Professor Infromation" />
 
         <EditText
             android:id="@+id/nameField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Name" >
@@ -53,7 +62,7 @@
 
         <EditText
             android:id="@+id/officeField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Office" >
@@ -63,15 +72,15 @@
 
         <EditText
             android:id="@+id/officeHoursField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Office Hours" >
-		</EditText>
-		
+</EditText>
+
         <EditText
             android:id="@+id/phoneNumberField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Phone Number" >
@@ -79,18 +88,30 @@
 
         <EditText
             android:id="@+id/emailAddressField"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:editable="TRUE"
             android:text="Email Address" >
-		</EditText>
-        
-        <Button
-            android:id="@+id/saveCourseButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Save" >
-        </Button>
-	
-	</LinearLayout>
+</EditText>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/saveCourseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+        </LinearLayout>
+
+</LinearLayout>
 </ScrollView>
