@@ -2,6 +2,7 @@ package school.planner;
 import school.planner.R;
 import android.app.TabActivity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.widget.*;
 import android.view.*;
@@ -41,17 +42,18 @@ public boolean onCreateOptionsMenu(Menu menu)
 		switch (item.getItemId()) //each option must have a layout defined in menu.xml. Simply add a new "case" below
 	//for functionality for a new option. "toast" below is a flashing message for demonstration.
 	{
-		case R.id.icontext2:
-		{
-			Intent i = new Intent(ClassPlanner.this, newCourseActivity.class);
-			startActivity(i);
-			break;
-		}
 		case R.id.icontext:
 		{
 			Intent i = new Intent(ClassPlanner.this, AddAssignment.class);
 			startActivity(i);
 			break;
+		}
+		case R.id.icontext2:
+		{
+				ClassPlanner.this.finish();
+				Intent i = new Intent(ClassPlanner.this, newCourseActivity.class);
+				startActivity(i);
+				break;
 		}
 	}
 		return true;

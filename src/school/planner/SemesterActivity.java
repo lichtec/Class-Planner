@@ -4,42 +4,60 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.content.Intent;
-import android.graphics.*;
-import android.graphics.drawable.BitmapDrawable;
+import android.database.Cursor;
 
 public class SemesterActivity extends ListActivity
-{  
-    
-    static final String[] NAMES = new String[]{
-    	"Class 1",
-    	"Class 2"
-    };
-	@Override
+{
+private courseDBAdapter dbAdapter;
+private Cursor courseInfo;
+private String[] name;
+@Override
     public void onCreate(Bundle savedInstanceState)
-	{
+{
+
         super.onCreate(savedInstanceState);
-        setListAdapter(new ArrayAdapter<String>(this, R.layout.listlayout, R.id.label, NAMES));
-        getListView().setTextFilterEnabled(true);     
+        dbAdapter = new courseDBAdapter(this);
+        dbAdapter.open();
+        courseInfo = dbAdapter.fetchAllCourses();
+        int courseCount = courseInfo.getCount();
+        if (!(courseInfo.moveToFirst()))
+        {
+            name = new String[1];
+        	name[0] = "Please create a new course";
+        }
+        else
+        {
+        	courseInfo.moveToFirst();
+            name = new String[courseCount];
+        	for(int i=0; i<courseCount; i++)
+        	{
+        		name[i] = courseInfo.getString(2);
+        		if(!courseInfo.isLast())
+        		{
+        			courseInfo.moveToNext();
+        		}
+        	}
+        }
+    	setListAdapter(new ArrayAdapter<String>(this, R.layout.listlayout, R.id.label, name));
+    	getListView().setTextFilterEnabled(true);
+        dbAdapter.close();
     }
     
-    protected void onListItemClick(ListView l, View v, int position, long id) 
+    protected void onListItemClick(ListView l, View v, int position, long id)
     {
-    	super.onListItemClick(l, v, position, id);
-    	if(position==0)
-    	{
-    		//Object o = this.getListAdapter().getItem(position);
-    		//String keyword = o.toString();
-    		//Toast.makeText(this, "You selected: " + keyword, Toast.LENGTH_LONG);
-    		Intent i = new Intent(SemesterActivity.this, ClassInformation.class);
-    		startActivity(i);
-    	}
-    	else if(position==1)
-    	{
-    		Intent i = new Intent(SemesterActivity.this, newCourseActivity.class);
-    		startActivity(i);
-    	}
+     super.onListItemClick(l, v, position, id);
+    	 if ((courseInfo.moveToFirst()))
+    	 {
+    		 Intent i = new Intent(SemesterActivity.this, ClassInformation.class);
+    		 i.putExtra("pos", (position));
+    		 startActivity(i);
+    	 }
+    	 else
+    	 {
+    		 Intent i = new Intent(SemesterActivity.this, newCourseActivity.class);
+    		 startActivity(i);
+    	 }
     }
 }
