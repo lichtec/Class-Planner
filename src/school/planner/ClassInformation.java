@@ -19,7 +19,9 @@ import android.widget.Toast;
 public class ClassInformation extends ExpandableListActivity
 {
 	private courseDBAdapter dbAdapter;
+	private AssignmentDBAdapter adbAdapter;
 	private Cursor courseInfo;
+	private Cursor assignmentInfo;
 	private String courseNumber;
 	private String roomNumber;
 	private String time;
@@ -28,6 +30,13 @@ public class ClassInformation extends ExpandableListActivity
 	private String officeHours;
 	private String phone;
 	private String email;
+	
+	private String courseName;
+	private String assignmentTitle;
+	private String description;
+	private String dueDate;
+	private String completed;
+	
 	private long rowId;
 	private long position;
     static final String headers[] =
@@ -43,10 +52,57 @@ public class ClassInformation extends ExpandableListActivity
     	
         dbAdapter = new courseDBAdapter(this);
         dbAdapter.open();
+        adbAdapter = new AssignmentDBAdapter(this);
+        adbAdapter.open();
         position = (long)(getIntent().getIntExtra("pos",0));
         courseInfo = dbAdapter.fetchAllCourses();
+        assignmentInfo = adbAdapter.fetchAllCourses();
+        assignmentInfo.moveToFirst();
+        
+        if(assignmentInfo.getPosition() == -1)
+        {
+        	for(long i=0; i<=position; i++)
+            {
+            	courseInfo.moveToNext();
+            }
+            rowId = Long.parseLong(courseInfo.getString(0));
+            courseNumber = courseInfo.getString(2);
+        	roomNumber = courseInfo.getString(3);
+        	time = courseInfo.getString(4);
+        	profName = courseInfo.getString(5);
+        	office = courseInfo.getString(6);
+        	officeHours = courseInfo.getString(7);
+        	phone = courseInfo.getString(8);
+        	email = courseInfo.getString(9);
+        	
+            
+        	subHeaders = new String [][]
+            		{
+            			{
+            				"Course Number:", courseNumber,
+            				"Room Number:", roomNumber,
+            				"Time:", time
+            			},
+            			{
+            				"Name:", profName,
+            				"Office:", office,
+            				"Office Hours:", officeHours,
+            				"Phone #:", phone,
+            				"E-mail:", email
+            			},
+            			{
+            				"No Assignment Has Been Created", "I hope you didn't forget anything!",
+            			}
+            		};
+        	
+        }
+        else
+        {
         for(long i=0; i<=position; i++)
+        {
         	courseInfo.moveToNext();
+        	assignmentInfo.moveToNext();
+        }
         rowId = Long.parseLong(courseInfo.getString(0));
         courseNumber = courseInfo.getString(2);
     	roomNumber = courseInfo.getString(3);
@@ -56,6 +112,13 @@ public class ClassInformation extends ExpandableListActivity
     	officeHours = courseInfo.getString(7);
     	phone = courseInfo.getString(8);
     	email = courseInfo.getString(9);
+    	
+    	courseName = assignmentInfo.getString(2);
+    	assignmentTitle = assignmentInfo.getString(3);
+    	description = assignmentInfo.getString(4);
+    	dueDate = assignmentInfo.getString(5);
+    	completed = assignmentInfo.getString(6);
+    	
         
     	subHeaders = new String [][]
         		{
@@ -72,10 +135,16 @@ public class ClassInformation extends ExpandableListActivity
         				"E-mail:", email
         			},
         			{
-        				"New Assignment", "This is a new Assignment, TEST"
+        				"Course Name: ", courseName,
+        				"Assignment Title: ", assignmentTitle,
+        				"Description: ", description,
+        				"Due Date: ", dueDate,
+        				"Is it Complete: ", completed
         			}
         		};
+        }
         dbAdapter.close();
+        adbAdapter.close();
         setContentView(R.layout.expandlistlayout);
 		SimpleExpandableListAdapter expListAdapter = new SimpleExpandableListAdapter(
 				this,
